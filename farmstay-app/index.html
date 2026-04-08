@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmstay Manager - MVP Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Farmstay Manager</h1>
+      <p class="subtitle">Demo mobile-first cho quản lý dịch vụ và nông sản.</p>
+
+      <p id="status" class="status success">Sẵn sàng vận hành.</p>
+
+      <section class="kpi-grid">
+        <article class="kpi"><label>Tổng doanh thu</label><strong id="kpi-total">0 đ</strong></article>
+        <article class="kpi"><label>Doanh thu dịch vụ</label><strong id="kpi-service">0 đ</strong></article>
+        <article class="kpi"><label>Doanh thu nông sản</label><strong id="kpi-product">0 đ</strong></article>
+        <article class="kpi"><label>Số booking</label><strong id="kpi-bookings">0</strong></article>
+        <article class="kpi"><label>Số đơn nông sản</label><strong id="kpi-orders">0</strong></article>
+        <article class="kpi"><label>Mặt hàng tồn thấp</label><strong id="kpi-low-stock">0</strong></article>
+      </section>
+
+      <div class="split">
+        <section class="section">
+          <h2>Tạo booking dịch vụ</h2>
+          <form id="service-form" class="form-grid">
+            <label>
+              Dịch vụ
+              <select id="service-select"></select>
+            </label>
+            <label>
+              Số lượng
+              <input id="service-qty" type="number" min="1" value="1" required />
+            </label>
+            <label>
+              Tên khách
+              <input id="service-customer" type="text" placeholder="Nguyễn Văn A" />
+            </label>
+            <label>
+              &nbsp;
+              <button type="submit">Lưu booking</button>
+            </label>
+          </form>
+        </section>
+
+        <section class="section">
+          <h2>Tạo đơn nông sản</h2>
+          <form id="product-form" class="form-grid">
+            <label>
+              Nông sản
+              <select id="product-select"></select>
+            </label>
+            <label>
+              Số lượng
+              <input id="product-qty" type="number" min="1" value="1" required />
+            </label>
+            <label>
+              Tên khách
+              <input id="product-customer" type="text" placeholder="Trần Thị B" />
+            </label>
+            <label>
+              &nbsp;
+              <button type="submit">Lưu đơn</button>
+            </label>
+          </form>
+        </section>
+      </div>
+
+      <section class="section">
+        <h2>Tồn kho nông sản</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Tên</th>
+              <th>Giá bán</th>
+              <th>Tồn kho</th>
+            </tr>
+          </thead>
+          <tbody id="products-table"></tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Nhật ký giao dịch</h2>
+        <ul id="activities" class="activities"></ul>
+      </section>
+    </main>
+
+    <script src="core.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
