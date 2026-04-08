@@ -6,7 +6,7 @@ title: "Farmstay Manager App"
 
 Bạn có thể chạy thử bản demo tại:
 
-`/farmstay-app/index.html`
+`/App/farmstay-app/index.html`
 
 ---
 
@@ -22,10 +22,10 @@ Bạn có thể chạy thử bản demo tại:
 
 ## Kiến trúc code
 
-- `farmstay-app/core.js`: nghiệp vụ tính doanh thu, trừ tồn, tổng hợp KPI.
-- `farmstay-app/app.js`: xử lý UI + form + render dữ liệu.
-- `farmstay-app/styles.css`: giao diện mobile-first.
-- `farmstay-app/core.test.js`: test nghiệp vụ chạy bằng Node.js.
+- `App/farmstay-app/core.js`: nghiệp vụ tính doanh thu, trừ tồn, tổng hợp KPI.
+- `App/farmstay-app/app.js`: xử lý UI + form + render dữ liệu.
+- `App/farmstay-app/styles.css`: giao diện mobile-first.
+- `App/farmstay-app/core.test.js`: test nghiệp vụ chạy bằng Node.js.
 
 ---
 
